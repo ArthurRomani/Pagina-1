@@ -98,7 +98,6 @@ header {
     color: #fff;
     border: none;
     cursor: pointer;
-    margin-left: 578px;
     width: 155px;
     height: 45px;
     border-radius: 20px;
@@ -118,12 +117,9 @@ header {
   }
 
   #grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 10px;
-    margin-top: 60px;
-    margin-left: 300px;
-    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
 
   #grid {
@@ -131,4 +127,32 @@ header {
     align-items: center; 
   }
 
-  
+  #botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bloco {
+    flex-basis: 100%;
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+#bloco2 {
+    flex-basis: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#bloco > #grid,
+#bloco2 > #grid {
+    display: inline-block;
+}
+
+#container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
